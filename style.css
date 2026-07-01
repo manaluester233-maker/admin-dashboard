@@ -1,4 +1,4 @@
-*{
+Kita*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -338,4 +338,23 @@ tr:hover{
         white-space:nowrap;
     }
 
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile-img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #fff;
 }
