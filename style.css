@@ -291,3 +291,51 @@ font-size:34px;
 }
 
 }
+/* ========================= */
+/* TABEL DAFTAR PRODUK */
+/* ========================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    text-align:left;
+    font-size:16px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+}
+
+tr:hover{
+    background:#f5f7ff;
+}
+
+@media(max-width:768px){
+
+    .table-container{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+    th,
+    td{
+        white-space:nowrap;
+    }
+
+}
