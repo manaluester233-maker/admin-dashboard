@@ -57,9 +57,13 @@ header{
     color:white;
     padding:35px;
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
+    text-align:center;
+    gap:20px;
 }
+
 
 header h1{
     font-size:40px;
@@ -341,9 +345,13 @@ tr:hover{
 }
 header{
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
+    text-align:center;
+    gap:20px;
 }
+    
 
 .header-right{
     display:flex;
