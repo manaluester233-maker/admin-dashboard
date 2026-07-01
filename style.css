@@ -2,10 +2,10 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
 }
 
 body{
+    font-family:'Poppins',sans-serif;
     background:#f4f6f9;
 }
 
@@ -15,15 +15,19 @@ body{
 }
 
 .sidebar{
-    width:240px;
-    background:#1e293b;
+    width:260px;
+    background:#1f2937;
     color:white;
-    padding:20px;
+    padding:30px 20px;
 }
 
-.sidebar h2{
+.logo{
     text-align:center;
-    margin-bottom:30px;
+    margin-bottom:40px;
+}
+
+.logo h2{
+    font-size:30px;
 }
 
 .sidebar ul{
@@ -32,15 +36,16 @@ body{
 
 .sidebar ul li{
     padding:15px;
-    margin-bottom:10px;
-    background:#334155;
-    border-radius:8px;
+    margin-bottom:15px;
+    border-radius:10px;
     cursor:pointer;
-    transition:0.3s;
+    transition:.3s;
+    font-size:18px;
 }
 
-.sidebar ul li:hover{
-    background:#2563eb;
+.sidebar ul li:hover,
+.sidebar ul li.active{
+    background:#374151;
 }
 
 .content{
@@ -50,8 +55,28 @@ body{
 header{
     background:#2563eb;
     color:white;
-    padding:30px;
-    text-align:center;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+#darkModeBtn{
+    padding:12px 18px;
+    border:none;
+    border-radius:8px;
+    background:white;
+    color:#2563eb;
+    cursor:pointer;
+    font-weight:bold;
 }
 
 .cards{
@@ -63,43 +88,22 @@ header{
 
 .card{
     background:white;
-    border-radius:12px;
-    padding:25px;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:15px;
 }
 
 .card h2{
-    margin-bottom:10px;
-}
-
-table{
-    width:95%;
-    margin:20px auto;
-    border-collapse:collapse;
-    background:white;
-}
-
-table th{
-    background:#2563eb;
-    color:white;
-    padding:15px;
-}
-
-table td{
-    padding:15px;
-    border:1px solid #ddd;
-    text-align:center;
-}
-
-@media(max-width:768px){
-
-.container{
-display:block;
-}
-
-.sidebar{
-width:100%;
-}
-
+    color:#2563eb;
 }
