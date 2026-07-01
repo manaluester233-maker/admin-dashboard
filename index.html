@@ -3,121 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Dashboard Admin - Ester Manalu</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container">
 
+    <!-- Sidebar -->
     <aside class="sidebar">
 
-        <h2>Admin Panel</h2>
+        <div class="logo">
+            <h2>Admin Panel</h2>
+        </div>
 
         <ul>
-            <li>🏠 Dashboard</li>
+
+            <li class="active">🏠 Dashboard</li>
+
             <li>📦 Produk</li>
+
             <li>🛒 Pesanan</li>
+
             <li>👥 Pelanggan</li>
+
+            <li>💰 Penjualan</li>
+
             <li>📈 Laporan</li>
-            <li>⚙️ Pengaturan</li>
+
+            <li>⚙ Pengaturan</li>
+
+            <li>📞 Kontak</li>
+
         </ul>
 
     </aside>
 
+    <!-- Content -->
     <main class="content">
 
         <header>
-            <h1>Dashboard Admin</h1>
-            <p>Selamat Datang, Ester Manalu</p>
+
+            <div>
+
+                <h1>Dashboard Admin</h1>
+
+                <p>Selamat Datang, Ester Manalu 👋</p>
+
+            </div>
+
+            <button id="darkModeBtn">
+                🌙 Dark Mode
+            </button>
+
         </header>
+
+        <!-- Statistik -->
 
         <section class="cards">
 
             <div class="card">
-                <h2>📦 Produk</h2>
-                <p>120</p>
+
+                <h3>📦 Produk</h3>
+
+                <h2>120</h2>
+
             </div>
 
             <div class="card">
-                <h2>🛒 Pesanan</h2>
-                <p>85</p>
+
+                <h3>🛒 Pesanan</h3>
+
+                <h2>85</h2>
+
             </div>
 
             <div class="card">
-                <h2>👥 Pelanggan</h2>
-                <p>54</p>
+
+                <h3>👥 Pelanggan</h3>
+
+                <h2>54</h2>
+
             </div>
 
             <div class="card">
-                <h2>💰 Penjualan</h2>
-                <p>Rp12.500.000</p>
+
+                <h3>💰 Penjualan</h3>
+
+                <h2>Rp12.500.000</h2>
+
             </div>
 
         </section>
 
-        <section>
+        <!-- Produk -->
+
+        <section class="table-section">
 
             <h2>Daftar Produk</h2>
 
             <table>
 
-                <tr>
-                    <th>No</th>
-                    <th>Produk</th>
-                    <th>Harga</th>
-                    <th>Stok</th>
-                    <th>Status</th>
-                </tr>
+                <thead>
 
-                <tr>
-                    <td>1</td>
-                    <td>Sepatu</td>
-                    <td>Rp250.000</td>
-                    <td>20</td>
-                    <td>Aktif</td>
-                </tr>
+                    <tr>
 
-                <tr>
-                    <td>2</td>
-                    <td>Tas</td>
-                    <td>Rp150.000</td>
-                    <td>15</td>
-                    <td>Aktif</td>
-                </tr>
+                        <th>No</th>
 
-                <tr>
-                    <td>3</td>
-                    <td>Jam Tangan</td>
-                    <td>Rp500.000</td>
-                    <td>8</td>
-                    <td>Aktif</td>
-                </tr>
+                        <th>Produk</th>
 
-                <tr>
-                    <td>4</td>
-                    <td>Laptop</td>
-                    <td>Rp8.500.000</td>
-                    <td>6</td>
-                    <td>Aktif</td>
-                </tr>
+                        <th>Harga</th>
 
-                <tr>
-                    <td>5</td>
-                    <td>Keyboard</td>
-                    <td>Rp350.000</td>
-                    <td>12</td>
-                    <td>Aktif</td>
-                </tr>
+                        <th>Stok</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Sepatu</td>
+
+                        <td>Rp250.000</td>
+
+                        <td>20</td>
+
+                        <td>Aktif</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+
+                        <td>Tas</td>
+
+                        <td>Rp150.000</td>
+
+                        <td>15</td>
+
+                        <td>Aktif</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>3</td>
+
+                        <td>Jam Tangan</td>
+
+                        <td>Rp500.000</td>
+
+                        <td>8</td>
+
+                        <td>Aktif</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>4</td>
+
+                        <td>Laptop</td>
+
+                        <td>Rp8.500.000</td>
+
+                        <td>6</td>
+
+                        <td>Aktif</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>5</td>
+
+                        <td>Keyboard</td>
+
+                        <td>Rp350.000</td>
+
+                        <td>12</td>
+
+                        <td>Aktif</td>
+
+                    </tr>
+
+                </tbody>
 
             </table>
 
         </section>
 
+        <!-- Aktivitas -->
+
+        <section class="activity">
+
+            <h2>Aktivitas Hari Ini</h2>
+
+            <ul>
+
+                <li>✅ Produk baru berhasil ditambahkan.</li>
+
+                <li>🛒 Pesanan #1025 berhasil diproses.</li>
+
+                <li>👤 Pelanggan baru telah mendaftar.</li>
+
+                <li>💰 Penjualan hari ini mencapai target.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Footer -->
+
         <footer>
-            <p>© 2026 Dashboard Admin - Dibuat oleh Ester Manalu</p>
+
+            <p>© 2026 Dashboard Admin | Dibuat oleh <strong>Ester Manalu</strong></p>
+
         </footer>
 
     </main>
