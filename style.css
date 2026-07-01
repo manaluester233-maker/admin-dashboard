@@ -107,3 +107,187 @@ header p{
 .card h2{
     color:#2563eb;
 }
+.table-section{
+    padding:25px;
+}
+
+.table-section h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.activity{
+    padding:25px;
+}
+
+.activity h2{
+    margin-bottom:15px;
+}
+
+.activity ul{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.activity ul li{
+    margin:12px 0;
+}
+
+footer{
+    margin-top:30px;
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.dark{
+    background:#111827;
+    color:white;
+}
+
+.dark .card,
+.dark table,
+.dark .activity ul{
+    background:#1f2937;
+    color:white;
+}
+
+.dark table td{
+    border:1px solid #374151;
+}
+
+@media(max-width:768px){
+
+.container{
+display:block;
+}
+
+.sidebar{
+width:100%;
+}
+
+header{
+flex-direction:column;
+text-align:center;
+gap:15px;
+}
+
+header h1{
+font-size:34px;
+}
+
+}
+.table-section{
+    padding:25px;
+}
+
+.table-section h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.activity{
+    padding:25px;
+}
+
+.activity h2{
+    margin-bottom:15px;
+}
+
+.activity ul{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.activity ul li{
+    margin:12px 0;
+}
+
+footer{
+    margin-top:30px;
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.dark{
+    background:#111827;
+    color:white;
+}
+
+.dark .card,
+.dark table,
+.dark .activity ul{
+    background:#1f2937;
+    color:white;
+}
+
+.dark table td{
+    border:1px solid #374151;
+}
+
+@media(max-width:768px){
+
+.container{
+display:block;
+}
+
+.sidebar{
+width:100%;
+}
+
+header{
+flex-direction:column;
+text-align:center;
+gap:15px;
+}
+
+header h1{
+font-size:34px;
+}
+
+}
