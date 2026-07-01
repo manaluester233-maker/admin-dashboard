@@ -1,49 +1,105 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-  margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-header {
-  background: #2563eb;
-  color: white;
-  padding: 20px;
-  text-align: center;
+body{
+    background:#f4f6f9;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  padding: 20px;
+.container{
+    display:flex;
+    min-height:100vh;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.sidebar{
+    width:240px;
+    background:#1e293b;
+    color:white;
+    padding:20px;
 }
 
-.table {
-  padding: 20px;
+.sidebar h2{
+    text-align:center;
+    margin-bottom:30px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
+.sidebar ul{
+    list-style:none;
 }
 
-th {
-  background: #2563eb;
-  color: white;
+.sidebar ul li{
+    padding:15px;
+    margin-bottom:10px;
+    background:#334155;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-th,
-td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: center;
+.sidebar ul li:hover{
+    background:#2563eb;
+}
+
+.content{
+    flex:1;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+table{
+    width:95%;
+    margin:20px auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+.container{
+display:block;
+}
+
+.sidebar{
+width:100%;
+}
+
 }
