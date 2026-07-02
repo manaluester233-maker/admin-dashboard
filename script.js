@@ -1,7 +1,18 @@
-// Admin Dashboard
+// Dark Mode
+const darkModeBtn = document.getElementById("darkModeBtn");
 
-console.log("Dashboard Admin berhasil dimuat!");
+if (darkModeBtn) {
+    darkModeBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+    });
+}
 
-function tampilPesan() {
-  alert("Selamat datang di Dashboard Admin!");
+// Sidebar Menu
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.querySelector(".sidebar");
+
+if (menuBtn && sidebar) {
+    menuBtn.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+    });
 }
